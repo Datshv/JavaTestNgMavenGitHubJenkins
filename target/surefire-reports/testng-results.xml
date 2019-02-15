@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="4" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="tests.UnitTest" duration-ms="103" started-at="2019-02-15T04:22:58Z" finished-at="2019-02-15T04:22:58Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="103" started-at="2019-02-15T04:22:58Z" finished-at="2019-02-15T04:22:58Z">
+      <class name="tests.UnitTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:tests.UnitTest@43a25848]" name="beforeTest" is-config="true" duration-ms="29" started-at="2019-02-15T04:22:58Z" finished-at="2019-02-15T04:22:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:tests.UnitTest@43a25848]" name="beforeClass" is-config="true" duration-ms="1" started-at="2019-02-15T04:22:58Z" finished-at="2019-02-15T04:22:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="adicionTest()[pri:0, instance:tests.UnitTest@43a25848]" name="adicionTest" duration-ms="20" started-at="2019-02-15T04:22:58Z" finished-at="2019-02-15T04:22:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adicionTest -->
+        <test-method status="PASS" signature="divisionTest()[pri:0, instance:tests.UnitTest@43a25848]" name="divisionTest" duration-ms="1" started-at="2019-02-15T04:22:58Z" finished-at="2019-02-15T04:22:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- divisionTest -->
+        <test-method status="PASS" signature="extraccionTest()[pri:0, instance:tests.UnitTest@43a25848]" name="extraccionTest" duration-ms="8" started-at="2019-02-15T04:22:58Z" finished-at="2019-02-15T04:22:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extraccionTest -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:tests.UnitTest@43a25848]" name="afterClass" is-config="true" duration-ms="1" started-at="2019-02-15T04:22:58Z" finished-at="2019-02-15T04:22:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:tests.UnitTest@43a25848]" name="afterTest" is-config="true" duration-ms="1" started-at="2019-02-15T04:22:58Z" finished-at="2019-02-15T04:22:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- tests.UnitTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- tests.UnitTest -->
+</testng-results>
