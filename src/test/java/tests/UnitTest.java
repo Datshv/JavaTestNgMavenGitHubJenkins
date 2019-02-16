@@ -1,5 +1,7 @@
 package tests;
 
+import java.util.logging.Level;
+
 import org.calculadora.Adicion;
 import org.calculadora.Division;
 import org.calculadora.Extraccion;
@@ -10,30 +12,34 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import org.testng.log4testng.Logger;
 
 public class UnitTest {
   
+	private final static Logger LOGGER = Logger.getLogger(Thread.currentThread().getClass());
   
   @BeforeClass
   public void beforeClass() {
-  System.out.println("El beforeClass se ejecuta una vez antes de todas las pruebas");
+	  LOGGER.info("salio");
+  LOGGER.info("El beforeClass se ejecuta una vez antes de todas las pruebas");
   }
   
   @BeforeTest
   public void beforeTest() {
-	  System.out.println("El beforeTest se ejecuta antes de todas las pruebas");
+	  LOGGER.info("El beforeTest se ejecuta antes de todas las pruebas");
 
   }
 
   @AfterTest
   public void afterTest() {
-	  System.out.println("El afterTest se ejecuta despues de todas las pruebas");
+	  LOGGER.info("El afterTest se ejecuta despues de todas las pruebas");
   }
 
   
   @Test
 	public void adicionTest() {
-		System.out.println("prueba adicion");
+		LOGGER.info("prueba adicion");
+		
 	   Adicion adicion = new Adicion();
 	   Assert.assertEquals(3,adicion.suma(1, 2));
 	}
@@ -42,7 +48,7 @@ public class UnitTest {
 	
 	@Test
 	public void extraccionTest() {
-		System.out.println("prueba extraccion");
+		LOGGER.info("prueba extraccion");
 	   Extraccion extraccion = new Extraccion();
 	   Assert.assertEquals(0,extraccion.resta(2, 2));
 	}
@@ -53,7 +59,7 @@ public class UnitTest {
 	//@org.testng.annotations.Ignore
 	@Test
 	public void multiplicacionTest() {
-		System.out.println("prueba multiplicacion");
+		LOGGER.info("prueba multiplicacion");
 	   Multiplicacion multiplicacion = new Multiplicacion();
 	   Assert.assertEquals(4,multiplicacion.multiplicacion(2, 2));
 	}
@@ -61,7 +67,7 @@ public class UnitTest {
 	
 	@Test
 	public void divisionTest() {
-		System.out.println("prueba division");
+		LOGGER.info("prueba division");
 	   Division division = new Division();
 	   Assert.assertEquals(2,division.division(4, 2));
 	   Assert.assertEquals(0,division.division(1, 0));
@@ -73,7 +79,7 @@ public class UnitTest {
 
   @AfterClass
   public void afterClass() {
-	  System.out.println("El afterClass se ejecuta una vez despues de todas las pruebas");
+	  LOGGER.info("El afterClass se ejecuta una vez despues de todas las pruebas");
 
   }
 
