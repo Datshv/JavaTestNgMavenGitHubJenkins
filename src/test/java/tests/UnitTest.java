@@ -50,7 +50,7 @@ public class UnitTest {
 	/**
 	 * Se ignora el test multiplicacion con objetivo de practica para conocer el funcionamiento del tag @ignore
 	 */
-	@org.testng.annotations.Ignore
+	//@org.testng.annotations.Ignore
 	@Test
 	public void multiplicacionTest() {
 		System.out.println("prueba multiplicacion");
