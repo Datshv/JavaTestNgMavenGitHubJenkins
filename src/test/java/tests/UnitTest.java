@@ -50,7 +50,7 @@ public class UnitTest {
 	public void extraccionTest() {
 		LOGGER.info("prueba extraccion");
 	   Extraccion extraccion = new Extraccion();
-	   Assert.assertEquals(0,extraccion.resta(2, 2));
+	   Assert.assertEquals(0,extraccion.resta(1, 2));
 	}
 	
 	/**
