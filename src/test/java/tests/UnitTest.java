@@ -11,6 +11,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 import org.testng.log4testng.Logger;
 
@@ -74,6 +75,7 @@ public class UnitTest {
 	 * Primero instancia un objeto de tipo Multiplicacion y usa este objeto para hacer uso del metodo multiplicacion
 	 * La anotacion @Test indica que este metodo es un metodo para pruebas
 	 */
+	@Ignore
 	@Test
 	public void multiplicacionTest() {
 		LOGGER.info("prueba multiplicacion");
