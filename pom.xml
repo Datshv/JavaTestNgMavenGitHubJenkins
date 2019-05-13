@@ -4,14 +4,14 @@
   <artifactId>JavaTestNgMavenGitHubJenkins</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
-  <properties>
+ <!--   <properties>
   <sonar.core.codeCoveragePlugin>jacoco</sonar.core.codeCoveragePlugin>
   <sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
   <sonar.language>java</sonar.language>
    <sonar.coverage.exclusions>
        C:/Users/usuario/.jenkins/workspace/Java+Maven+SonarQube/src/test/java/tests/*.java
     </sonar.coverage.exclusions>
-</properties>
+</properties> -->
   
   <dependencies>
   <!-- https://mvnrepository.com/artifact/org.testng/testng -->
@@ -61,8 +61,12 @@
 							<goal>report</goal>
 						</goals>
 						<configuration>
+						
 							<!-- Sets the path to the file which contains the execution data. -->
-
+						<excludes>
+       					 <exclude>**/principal/*</exclude>
+       					 <exclude>**/tests/*</exclude>
+   							 </excludes>
 							<dataFile>target/jacoco.exec</dataFile>
 							<!-- Sets the output directory for the code coverage report. -->
 							<outputDirectory>target/jacoco-ut</outputDirectory>
